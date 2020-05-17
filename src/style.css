@@ -1,0 +1,31 @@
+.conway {
+  display: block;
+}
+
+.conway_table {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.conway_row {
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.conway_cell {
+  background: transparent;
+  outline: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conway_cell__live {
+  background: black;
+}
+
+.conway_buttonContainer {
+  padding: 5px 0;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "conway-react",
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "description": "Conway game.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1ofshant/canway-react.git"
+  },
+  "dependencies": {
+    "react": "^16.8",
+    "react-dom": "^16.8",
+    "react-scripts": "3.4.1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/react"
+    ]
+  },
+  "keywords": [
+    "conway",
+    "canway",
+    "game",
+    "react"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist && npx babel src --out-dir dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4"
+  }
+}
