@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useMemo } from 'react';
 import { composeClassNames } from './utils';
-import './style.scss';
+import './style.css';
 
 const Cell = ({
   isLive,

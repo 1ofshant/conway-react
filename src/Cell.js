@@ -2,7 +2,7 @@ import React, { memo, useCallback, useMemo } from 'react';
 
 import { composeClassNames } from './utils';
 
-import './style.scss';
+import './style.css';
 
 const Cell = ({ isLive, onSelect, rowIndex, colIndex, height, width, className }) => {
   const handleClick = useCallback(() => {
