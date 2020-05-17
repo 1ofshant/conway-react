@@ -38,9 +38,10 @@ const Conway = ({ rowSize = 30, colSize = 30, sideWidth = 600, timeSlot = 50, cl
   }, [intervalId]);
 
   const handleStart = useCallback(() => {
-    const intervalId = setInterval(handleNext, timeSlot);
-    setIntervalId(intervalId);
-  }, [handleNext, timeSlot]);
+    if (intervalId) return;
+    const intervId = setInterval(handleNext, timeSlot);
+    setIntervalId(intervId);
+  }, [handleNext, intervalId, timeSlot]);
 
   const handleStop = useCallback(() => {
     if (intervalId) {
